@@ -14,7 +14,7 @@ public class GenericMatchQueue<T> {
         if (items.isEmpty()) {
             throw new IllegalStateException("Queue is empty");
         }
-        return items.pop();
+        return items.removeFirst();
     }
 
     public T peek() {
